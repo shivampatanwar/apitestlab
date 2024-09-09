@@ -18,31 +18,38 @@ beautify.addEventListener('click', function (e) {
 
 btn.addEventListener('click', function (e) {
     e.preventDefault();
-    let header= {
-        method: method.value,
-    }   
+    try {
 
-
-
-    if(method.value == 'POST' || method.value == 'PUT' || method.value=='PATCH' ){
-
-        let obj = JSON.parse(body.value);
-        header.body=JSON.stringify(obj); 
-        header.headers = {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json',
+        let header = {
+            method: method.value,
         }
-    }
 
-    fetch(url.value, header)
-    .then(resp => resp.json())
-    .then((data) => {
-        response.value = JSON.stringify(data, null, 2);
 
-    })
-    .catch((error) => {
+
+        if (method.value == 'POST' || method.value == 'PUT' || method.value == 'PATCH') {
+
+            let obj = JSON.parse(body.value);
+            header.body = JSON.stringify(obj);
+            header.headers = {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+            }
+        }
+
+        fetch(url.value, header)
+            .then(resp => resp.json())
+            .then((data) => {
+                response.value = JSON.stringify(data, null, 2);
+
+            })
+            .catch((error) => {
+                response.value = error;
+            });
+    
+    
+    } catch (error) {
         response.value = error;
-    });
+    }
 
 });
 
