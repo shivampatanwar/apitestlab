@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API TESTLAB</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <h1>API TESTLAB</h1> 
+    </header>
+
+    <form  method="POST">
+
+        <div class="method">
+            <select name="method" id="method" required title="1">
+                <option selected disabled>Method</option>
+                <option value="GET">GET</option>
+                <option value="POST">POST</option>
+                <option value="PUT">PUT</option>
+                <option value="PATCH">PATCH</option>
+                <option value="DELETE">DELETE</option>
+            </select>
+    
+            <input type="text" id="url" name="url" placeholder="Enter API URL" required>
+        </div>
+
+        <br><br>
+
+        
+       <div class="body">
+        <label for="body">Enter Request Body (if applicable):</label> 
+        <button type="button" id="beautify">Beautify</button>
+       </div>
+ 
+        <br> <br>
+
+        <textarea id="body" name="body" rows="10" cols="50"></textarea>
+
+        <br> <br>
+        
+        <button id="btn" type="submit">Submit</button>
+    </form>
+
+    <br><br>
+
+
+    <div>
+        <textarea  id="response" rows="20" cols="50" placeholder="Response" ></textarea>
+    </div>
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
