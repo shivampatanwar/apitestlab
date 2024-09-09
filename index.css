@@ -122,6 +122,7 @@
             border: none;
             color: rgb(201, 198, 198);
             letter-spacing: 2px;
+            max-width: scroll;
         }
     }
 
