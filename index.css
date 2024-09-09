@@ -55,11 +55,12 @@
                 }
             }
 
-            input {
+            textarea {
                 border: 1px solid black;
                 padding: 5px 5px;
                 border-radius: 3px;
                 font-size: 15px;
+                line-height: 25px
             }
         }
 

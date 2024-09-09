@@ -48,7 +48,7 @@ btn.addEventListener('click', function (e) {
     
     
     } catch (error) {
-        response.value = error;
+        response.value = error.message;
     }
 
 });
