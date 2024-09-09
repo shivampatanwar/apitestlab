@@ -42,7 +42,15 @@
 
             select{
                 width: max-content;
+                border: 1px solid black;
+                padding: 2px 5px;
+                border-radius: 3px;
                 margin-bottom: 15px;
+                font-size: 15px;
+
+                option{
+                    font-size: 15px;
+                }
             }
         }
 
