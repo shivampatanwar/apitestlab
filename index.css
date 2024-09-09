@@ -76,9 +76,11 @@
 
             button{
                 border: none;
-                padding: 2px 5px;
+                background-color: rgb(9, 94, 3);
+                padding: 1px 5px;
                 border-radius: 3px;
-                font-size: 15px;
+                color: white;
+                font-size: 13px;
             }
         }
 
