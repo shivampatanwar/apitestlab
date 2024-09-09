@@ -84,6 +84,18 @@
             }
         }
 
+        #body{
+            padding: 10px;
+            border: none;
+            background-color: rgb(44, 43, 43);
+            border-radius: 3px;
+            color: white;
+        }
+
+        #btn{
+
+        }
+
 
        
     }

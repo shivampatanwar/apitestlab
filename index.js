@@ -37,9 +37,11 @@ btn.addEventListener('click', function (e) {
     fetch(url.value, header)
     .then(resp => resp.json())
     .then((data) => {
-        console.log(data);
         response.value = JSON.stringify(data, null, 2);
 
+    })
+    .catch((error) => {
+        response.value = error;
     });
 
 });
