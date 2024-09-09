@@ -90,6 +90,7 @@
             background-color: rgb(44, 43, 43);
             border-radius: 3px;
             color: rgb(201, 198, 198);
+            font-size: 15px;
             letter-spacing: 2px;
         }
 
@@ -116,12 +117,13 @@
 
         textarea {
             width: 100%;
-            padding: 20px;
+            padding: 10px;
             background-color: rgb(44, 43, 43);
             border-radius: 3px;
             border: none;
             color: rgb(201, 198, 198);
             letter-spacing: 2px;
+            font-size: 15px;
             max-width: scroll;
         }
     }
