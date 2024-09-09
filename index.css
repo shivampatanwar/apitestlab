@@ -89,11 +89,17 @@
             border: none;
             background-color: rgb(44, 43, 43);
             border-radius: 3px;
+            letter-spacing: 2px;
             color: white;
         }
 
         #btn{
-
+            border: none;
+                background-color: rgb(9, 94, 3);
+                padding: 10px 10px;
+                border-radius: 3px;
+                color: white;
+                font-size: 13px;
         }
 
 
